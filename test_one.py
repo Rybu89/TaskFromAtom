@@ -66,6 +66,7 @@ class TestOne:
             TestOne.act_keys_list), f'The list of expected fields does not match'
 
     def test_checking_json_fields2(self):
+        """ Второй способ проверки полей, проверка на полное соответствие ключей-значений"""
         act_json = get_response_as_dict()
         expect_json = {
             "name": "Gismeteo",
